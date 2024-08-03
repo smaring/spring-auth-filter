@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Main Page</h1>
+Go to <a href="/page2">Page 2</a>
+<br/>
+<p th:text="${'Hello ' + #ctx.session.name}" />
+<p>Here's a picture of a squirrel:</p>
+<img src="/images/squirrel.png" />
+</body>
+</html>
